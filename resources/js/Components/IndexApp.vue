@@ -28,9 +28,9 @@
                         v-for="(pokemon, k) in pokemons"
                         :key="k"
                         >
-                        <input type="checkbox" @click="tooglePokemon(pokemon.name)" :id="'myCheckbox' + k" />
-                        <label class="label-pokemon" :for="'myCheckbox' + k"
-                            >
+                        <input type="checkbox" @click="tooglePokemon(pokemon)" :id="'myCheckbox' + k" />
+                        <label class="label-pokemon" :for="'myCheckbox' + k">
+                            <img style="margin: auto; display: block" :src="pokemon.image"/>
                             <div class="text-center">
                             {{ pokemon.name }}
                             </div></label
@@ -60,7 +60,7 @@ const form = reactive({
 })
 
 const tooglePokemon = async(pokemon) => {
-    let index = form.pokemons.findIndex((e)=>e === pokemon);
+    let index = form.pokemons.findIndex((e)=>e.name === pokemon.name);
     if(index === -1){
         form.pokemons.push(pokemon);
     }

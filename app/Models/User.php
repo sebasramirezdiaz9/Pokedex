@@ -44,6 +44,7 @@ class User extends Authenticatable
 
 
     public function pokemons(){
-        return $this->hasMany(Pokemons::class);
+        return $this->hasMany(Pokemon::class);
     }
+
 }
