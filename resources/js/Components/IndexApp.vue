@@ -1,6 +1,6 @@
 <template>
    <div>
-        <div v-if="errors">
+        <div class="sticky top-0 " v-if="errors">
         <div v-for="(v, k) in errors" :key="k" class="bg-red-400 text-white font-bold shadow-lg py-2 px-4 pr-0">
             <p v-for="error in v" :key="error" class="text-sm">
                 {{ error }}
@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="w-full h-4/5 overflow-y-auto bg-cyan-200 px-40">
-                    <div class="bg-cyan-200 text-center sticky top-0 w-full flex items-center justify-center z-10 h-20">
+                    <div class="bg-cyan-200 text-center sticky top-18 w-full flex items-center justify-center z-10 h-20">
                         <button class="bg-transparent border border-gray-800 hover:border-white hover:bg-white hover:text-cyan-600 text-gray-800 font-bold py-2 px-4 rounded-full">
                             Registrar
                         </button>

@@ -20404,7 +20404,8 @@ var _withScopeId = function _withScopeId(n) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-717ea48c"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
 };
 var _hoisted_1 = {
-  key: 0
+  key: 0,
+  "class": "sticky top-0"
 };
 var _hoisted_2 = ["onSubmit"];
 var _hoisted_3 = {
@@ -20418,7 +20419,7 @@ var _hoisted_5 = {
 };
 var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "bg-cyan-200 text-center sticky top-0 w-full flex items-center justify-center z-10 h-20"
+    "class": "bg-cyan-200 text-center sticky top-18 w-full flex items-center justify-center z-10 h-20"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "bg-transparent border border-gray-800 hover:border-white hover:bg-white hover:text-cyan-600 text-gray-800 font-bold py-2 px-4 rounded-full"
   }, " Registrar ")], -1 /* HOISTED */);
