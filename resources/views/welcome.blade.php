@@ -23,7 +23,33 @@
     <body class="antialiased">
         <div class="justify-center sm:items-center sm:pt-0">
             <div id="app" class="min-h-screen">
-                <index-app/>
+            <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-teal-700">
+                <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+                <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+                    <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
+                    Menu
+                    </a>
+                    <button class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" v-on:click="toggleNavbar()">
+                    <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="lg:flex lg:flex-grow items-center">
+                    <ul class="flex flex-col lg:flex-row list-none ml-auto">
+                    <li class="nav-item">
+                        <router-link to="/" class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
+                          <span class="ml-2">Register</span>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/index" class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
+                        <span class="ml-2">Trainners</span>
+                        </router-link>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+                <router-view/>
             </div>
             <script src="{{ mix('js/app.js') }}"></script>
             </div>

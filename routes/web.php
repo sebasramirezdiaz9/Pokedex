@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::apiResource('trainers', UserController::class);
+
+Route::view('/{any', 'home')->where('any','.*');
